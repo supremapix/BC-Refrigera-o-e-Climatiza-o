@@ -11,7 +11,7 @@ export const Hero: React.FC = () => {
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/15 blur-[120px] rounded-full animate-pulse" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-400/10 blur-[120px] rounded-full animate-pulse delay-700" />
-        
+
         {/* Floating Icons */}
         <div className="absolute top-[15%] right-[10%] text-blue-500/10 animate-bounce delay-100 hidden lg:block">
           <Snowflake size={120} />
@@ -26,7 +26,15 @@ export const Hero: React.FC = () => {
           <ShieldCheck size={14} />
           Atendimento 24h em Santa Catarina
         </div>
-        
+
+        <div className="flex justify-center mb-8">
+          <img
+            src={COMPANY.logo}
+            alt="BC Refrigeração Logo"
+            className="logo-hero-animated w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-contain cursor-pointer"
+          />
+        </div>
+
         <h1 className="text-5xl md:text-7xl lg:text-[100px] font-black mb-8 tracking-tighter leading-[0.9] md:leading-[1]">
           BC <span className="gradient-text">REFRIGERAÇÃO</span><br />
           <span className="text-3xl md:text-5xl lg:text-6xl text-white/90 font-bold block mt-4">Expertise em Climatização</span>

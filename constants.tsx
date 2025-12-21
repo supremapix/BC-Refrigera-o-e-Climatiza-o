@@ -17,7 +17,7 @@ import {
 
 export const COMPANY = {
   name: "BC Refrigeração e Climatização",
-  logo: "https://bcrefrigeracaosc.com.br/medias/elementor/thumbs/bc-refrigeracao-na-penha-santa-catarina-sc-qeo72o01s91dzyobwnnre4n73o7nzson3ys2jw98n4.png",
+  logo: "/bc-logo-refrigeracao.png",
   address: "Av. Antônio J. Tavares, 90, Penha, Santa Catarina, Brasil",
   cep: "88385-000",
   phone: "(47) 3305-9452",

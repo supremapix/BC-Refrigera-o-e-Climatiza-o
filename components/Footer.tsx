@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
           {/* Section 1: Info & Logo */}
           <div className="footer-section">
             <div className="flex items-center gap-3 mb-8">
-              <img src={COMPANY.logo} alt="BC Refrigeração Logo" className="w-14 h-14 object-contain" />
+              <img src={COMPANY.logo} alt="BC Refrigeração Logo" className="logo-footer-animated w-20 h-20 object-contain cursor-pointer" />
               <div className="flex flex-col">
                 <span className="text-xl font-black text-white leading-none">BC REFRIGERAÇÃO</span>
                 <span className="text-[10px] text-cyan-400 font-bold tracking-widest mt-1">PENHA - SC</span>
