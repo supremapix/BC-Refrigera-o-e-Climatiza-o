@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BC Refrigeração | Climatização Profissional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --primary-blue: #0088cc;
+        --primary-cyan: #00d4ff;
+        --primary-dark: #0f172a;
+        --primary-darker: #020617;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--primary-darker);
+        color: white;
+        overflow-x: hidden;
+      }
+      @keyframes heartbeat {
+        0%, 100% { transform: scale(1); }
+        10%, 30% { transform: scale(1.2); }
+        20%, 40% { transform: scale(1); }
+      }
+      .heart-beat {
+        display: inline-block;
+        color: #ff0055;
+        animation: heartbeat 1.5s ease-in-out infinite;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+      }
+      .gradient-text {
+        background: linear-gradient(135deg, #0088cc 0%, #00d4ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .glow-blue {
+        box-shadow: 0 0 20px rgba(0, 136, 204, 0.3);
+      }
+      .perspective-1000 {
+        perspective: 1000px;
+      }
+      .rotate-y-3d:hover {
+        transform: rotateY(10deg) rotateX(5deg);
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0f172a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #0088cc;
+        border-radius: 10px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
