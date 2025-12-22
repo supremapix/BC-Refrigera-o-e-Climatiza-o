@@ -11,13 +11,20 @@ export const Footer: React.FC = () => {
           
           {/* Section 1: Info & Logo */}
           <div className="footer-section">
-            <div className="flex items-center gap-3 mb-8">
-              <img src={COMPANY.logo} alt="BC Refrigeração Logo" className="logo-footer-animated w-20 h-20 object-contain cursor-pointer" />
-              <div className="flex flex-col">
-                <span className="text-xl font-black text-white leading-none">BC REFRIGERAÇÃO</span>
-                <span className="text-[10px] text-cyan-400 font-bold tracking-widest mt-1">PENHA - SC</span>
+            <a href="#home" className="flex items-center gap-4 mb-8 group cursor-pointer">
+              <div className="relative w-24 h-24 lg:w-28 lg:h-28 transition-all duration-700">
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-cyan-400/30 blur-xl rounded-full opacity-70 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-125" />
+                <img
+                  src={COMPANY.logo}
+                  alt="BC Refrigeração Logo"
+                  className="w-full h-full object-contain relative z-10 transition-all duration-700 group-hover:scale-110 group-hover:-rotate-6 drop-shadow-[0_0_20px_rgba(0,136,204,0.6)] group-hover:drop-shadow-[0_0_40px_rgba(0,212,255,0.9)]"
+                />
               </div>
-            </div>
+              <div className="flex flex-col">
+                <span className="text-xl lg:text-2xl font-black text-white leading-none transition-all duration-500 group-hover:text-cyan-400">BC REFRIGERAÇÃO</span>
+                <span className="text-[10px] lg:text-xs text-cyan-400 font-bold tracking-widest mt-1 transition-all duration-500 group-hover:tracking-[0.3em]">PENHA - SC</span>
+              </div>
+            </a>
             <div className="space-y-4 text-slate-400">
               <p className="flex items-start gap-3">
                 <MapPin size={20} className="text-cyan-400 shrink-0" />

@@ -26,20 +26,21 @@ export const Header: React.FC = () => {
       isScrolled ? 'bg-slate-950/80 backdrop-blur-xl py-4 shadow-xl' : 'bg-transparent py-6'
     }`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <a href="#home" className="flex items-center gap-3 group">
-          <div className="relative w-12 h-12 md:w-14 md:h-14 transition-transform duration-500 group-hover:scale-110">
-            <div className="absolute inset-0 bg-blue-600/20 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
-            <img 
-              src={COMPANY.logo} 
-              alt="BC Refrigeração Logo" 
-              className="w-full h-full object-contain relative z-10"
+        <a href="#home" className="flex items-center gap-4 group cursor-pointer">
+          <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 transition-all duration-700 ease-out">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-cyan-400/30 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse" />
+            <div className="absolute inset-0 bg-blue-500/20 blur-2xl rounded-full group-hover:scale-150 transition-transform duration-700" />
+            <img
+              src={COMPANY.logo}
+              alt="BC Refrigeração Logo"
+              className="w-full h-full object-contain relative z-10 transition-all duration-700 group-hover:scale-110 group-hover:rotate-3 group-hover:drop-shadow-[0_0_30px_rgba(0,212,255,0.8)] drop-shadow-[0_0_15px_rgba(0,136,204,0.5)]"
             />
           </div>
           <div className="flex flex-col">
-            <span className="text-xl font-black bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent hidden sm:block leading-none">
+            <span className="text-lg sm:text-xl lg:text-2xl font-black bg-gradient-to-r from-white via-cyan-100 to-white/70 bg-clip-text text-transparent hidden sm:block leading-none transition-all duration-500 group-hover:from-cyan-400 group-hover:to-blue-400">
               BC REFRIGERAÇÃO
             </span>
-            <span className="text-[10px] text-cyan-400 font-bold tracking-widest hidden sm:block mt-1">
+            <span className="text-[10px] sm:text-xs text-cyan-400 font-bold tracking-widest hidden sm:block mt-1 transition-all duration-500 group-hover:text-cyan-300 group-hover:tracking-[0.3em]">
               PENHA - SANTA CATARINA
             </span>
           </div>
@@ -80,7 +81,14 @@ export const Header: React.FC = () => {
         isMobileMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
       }`}>
         <div className="flex flex-col items-center justify-center h-full gap-8">
-          <img src={COMPANY.logo} alt="Logo" className="w-24 mb-4" />
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-cyan-400/30 blur-2xl rounded-full animate-pulse" />
+            <img
+              src={COMPANY.logo}
+              alt="Logo"
+              className="w-32 h-32 mb-4 relative z-10 drop-shadow-[0_0_30px_rgba(0,212,255,0.8)] animate-pulse"
+            />
+          </div>
           {navLinks.map((link) => (
             <a
               key={link.name}

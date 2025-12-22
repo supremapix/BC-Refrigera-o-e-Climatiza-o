@@ -128,24 +128,28 @@ export const SERVICES = [
 
 export const PRODUCTS = [
   {
-    name: "Câmara Fria Premium",
-    category: "Industrial",
-    image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=600"
-  },
-  {
-    name: "Expositor Vertical 2 Portas",
-    category: "Comercial",
-    image: "https://images.unsplash.com/photo-1580913411353-29007f3a9792?auto=format&fit=crop&q=80&w=600"
-  },
-  {
-    name: "Split High Wall Inverter",
+    name: "Ar Condicionado Split 12000 BTUs",
     category: "Climatização",
-    image: "https://images.unsplash.com/photo-1621905252507-b354bcadcabc?auto=format&fit=crop&q=80&w=600"
+    description: "Split High Wall Inverter 12.000 BTUs com tecnologia inverter para máxima eficiência energética. Ideal para ambientes residenciais e comerciais de até 20m².",
+    image: "/ar_condicionado_split_12000_btus.jpg"
   },
   {
-    name: "Ilha de Congelados Polar",
+    name: "Freezer Expositor 2 Portas",
     category: "Comercial",
-    image: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80&w=600"
+    description: "Freezer expositor vertical com 2 portas de vidro, perfeito para supermercados, padarias e conveniências. Capacidade de 570 litros com iluminação LED interna.",
+    image: "/freezer_expositor_2_portas.jpg"
+  },
+  {
+    name: "Câmara Fria Congelado Premium",
+    category: "Industrial",
+    description: "Câmara fria para congelados de alta performance com temperatura de -18°C a -25°C. Estrutura em painéis modulares e sistema de refrigeração industrial de última geração.",
+    image: "/camara_fria_congelado_premium.jpg"
+  },
+  {
+    name: "Câmara Fria Standard com Piso Pain",
+    category: "Industrial",
+    description: "Câmara fria standard com piso em painel isolante térmico (Pain). Ideal para resfriados e congelados. Disponível em diversos tamanhos personalizados conforme sua necessidade.",
+    image: "/camara-fria-standard-com-piso-pain.jpg"
   }
 ];
 
