@@ -3,7 +3,6 @@ import React from 'react';
 import { NEIGHBORHOODS, COVERAGE_INFO } from '../constants';
 import { AnimatedCard } from './AnimatedCard';
 import { Map } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 export const Neighborhoods: React.FC = () => {
   return (
@@ -26,26 +25,24 @@ export const Neighborhoods: React.FC = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {NEIGHBORHOODS.map((bairro, index) => (
-            <Link key={index} to={`/localidade/${bairro.slug}`} className="block">
-              <AnimatedCard className="h-full cursor-pointer hover:scale-105 transition-transform duration-300">
-                <div className="flex items-start gap-4 h-full">
-                  <div className="p-3 rounded-xl bg-slate-800/50 group-hover:bg-blue-600/20 transition-all duration-300">
-                    {bairro.icon}
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold mb-2 group-hover:text-cyan-400 transition-colors">
-                      {bairro.name}
-                    </h3>
-                    <p className="text-slate-500 text-sm leading-relaxed group-hover:text-slate-300 transition-colors">
-                      {bairro.desc}
-                    </p>
-                  </div>
+            <AnimatedCard key={index} className="h-full">
+              <div className="flex items-start gap-4 h-full">
+                <div className="p-3 rounded-xl bg-slate-800/50 group-hover:bg-blue-600/20 transition-all duration-300">
+                  {bairro.icon}
                 </div>
-                <div className="absolute bottom-2 right-4 opacity-0 group-hover:opacity-20 transition-opacity">
-                  <Map className="w-12 h-12 text-white" />
+                <div>
+                  <h3 className="text-lg font-bold mb-2 group-hover:text-cyan-400 transition-colors">
+                    {bairro.name}
+                  </h3>
+                  <p className="text-slate-500 text-sm leading-relaxed group-hover:text-slate-300 transition-colors">
+                    {bairro.desc}
+                  </p>
                 </div>
-              </AnimatedCard>
-            </Link>
+              </div>
+              <div className="absolute bottom-2 right-4 opacity-0 group-hover:opacity-20 transition-opacity">
+                <Map className="w-12 h-12 text-white" />
+              </div>
+            </AnimatedCard>
           ))}
         </div>
 
