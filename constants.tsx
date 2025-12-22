@@ -17,7 +17,7 @@ import {
 
 export const COMPANY = {
   name: "BC Refrigeração e Climatização",
-  logo: "/bc-logo-refrigeracao.png",
+  logo: "/bc-logo-refrigeracao copy copy.png",
   address: "Av. Antônio J. Tavares, 90, Penha, Santa Catarina, Brasil",
   cep: "88385-000",
   phone: "(47) 3305-9452",
@@ -30,66 +30,110 @@ export const COMPANY = {
   mapsLink: "https://maps.app.goo.gl/gpwxntKJnNyTcNc29"
 };
 
+export const COVERAGE_INFO = {
+  radius: "200km",
+  message: "Atendemos em um raio de 200km do nosso endereço com acréscimo de taxa de deslocamento",
+  baseLocation: "Penha - SC"
+};
+
 export const NEIGHBORHOODS = [
   {
-    name: "Centro",
-    desc: "O coração pulsante de BC. Atendemos os maiores arranha-céus e comércios da Avenida Brasil e Atlântica.",
+    name: "Centro - Penha",
+    city: "Penha",
+    slug: "centro-penha",
+    desc: "Coração comercial de Penha. Atendimento especializado para comércios, restaurantes e residências do centro histórico.",
     icon: <Building className="text-blue-400" />
   },
   {
-    name: "Pioneiros",
+    name: "Armação - Penha",
+    city: "Penha",
+    slug: "armacao-penha",
+    desc: "Região histórica da pesca artesanal. Manutenção de equipamentos para pescarias e comércios locais.",
+    icon: <Waves className="text-cyan-400" />
+  },
+  {
+    name: "Praia Alegre - Penha",
+    city: "Penha",
+    slug: "praia-alegre-penha",
+    desc: "Área turística com pousadas e hotéis. Climatização e refrigeração para empreendimentos à beira-mar.",
+    icon: <Palmtree className="text-green-400" />
+  },
+  {
+    name: "Nossa Senhora de Fátima - Penha",
+    city: "Penha",
+    slug: "nossa-senhora-fatima-penha",
+    desc: "Bairro residencial tradicional. Instalação e manutenção de ar condicionado para famílias de Penha.",
+    icon: <Home className="text-slate-400" />
+  },
+  {
+    name: "Santa Lídia - Penha",
+    city: "Penha",
+    slug: "santa-lidia-penha",
+    desc: "Crescimento urbano acelerado. Soluções em refrigeração para novos empreendimentos residenciais.",
+    icon: <Building className="text-indigo-400" />
+  },
+  {
+    name: "São Nicolau - Penha",
+    city: "Penha",
+    slug: "sao-nicolau-penha",
+    desc: "Proximidade com o Beto Carrero World. Atendimento para hotéis, pousadas e comércio turístico.",
+    icon: <ShieldCheck className="text-cyan-400" />
+  },
+  {
+    name: "Gravatá - Penha",
+    city: "Penha",
+    slug: "gravata-penha",
+    desc: "Zona de expansão comercial. Refrigeração industrial para supermercados e distribuidoras.",
+    icon: <Truck className="text-red-400" />
+  },
+  {
+    name: "Centro - Balneário Camboriú",
+    city: "Balneário Camboriú",
+    slug: "centro-balneario-camboriu",
+    desc: "Coração de BC. Atendemos os maiores arranha-céus e comércios da Avenida Brasil e Atlântica.",
+    icon: <Building className="text-blue-400" />
+  },
+  {
+    name: "Pioneiros - Balneário Camboriú",
+    city: "Balneário Camboriú",
+    slug: "pioneiros-balneario-camboriu",
     desc: "Região nobre da Barra Norte. Especialistas em climatização silenciosa para condomínios de alto padrão.",
     icon: <ShieldCheck className="text-cyan-400" />
   },
   {
-    name: "Nações",
+    name: "Nações - Balneário Camboriú",
+    city: "Balneário Camboriú",
+    slug: "nacoes-balneario-camboriu",
     desc: "Bairro dinâmico com forte veia comercial. Manutenção rápida para lojas e residências locais.",
     icon: <Zap className="text-yellow-400" />
   },
   {
-    name: "Estados",
+    name: "Estados - Balneário Camboriú",
+    city: "Balneário Camboriú",
+    slug: "estados-balneario-camboriu",
     desc: "Próximo ao Balneário Shopping. Atendimento ágil para uma das áreas que mais cresce na cidade.",
     icon: <MapPin className="text-red-400" />
   },
   {
-    name: "Praia dos Amores",
+    name: "Praia dos Amores - Balneário Camboriú",
+    city: "Balneário Camboriú",
+    slug: "praia-dos-amores-balneario-camboriu",
     desc: "Onde o luxo encontra a natureza. Proteção especial contra maresia em sistemas de ar condicionado.",
     icon: <Waves className="text-blue-300" />
   },
   {
-    name: "Barra (Norte e Sul)",
-    desc: "Raízes históricas e polos gastronômicos. Manutenção vital para freezers e câmaras de restaurantes.",
+    name: "Barra Norte - Balneário Camboriú",
+    city: "Balneário Camboriú",
+    slug: "barra-norte-balneario-camboriu",
+    desc: "Polo gastronômico e residencial de alto padrão. Manutenção de adegas e câmaras frias para restaurantes.",
     icon: <Palmtree className="text-green-400" />
   },
   {
-    name: "Vila Real & Municípios",
-    desc: "Bairros tradicionais e residenciais. Instalação e higienização completa para o conforto da sua família.",
+    name: "Barra Sul - Balneário Camboriú",
+    city: "Balneário Camboriú",
+    slug: "barra-sul-balneario-camboriu",
+    desc: "Raízes históricas preservadas. Climatização para hotéis boutique e estabelecimentos tradicionais.",
     icon: <Home className="text-slate-400" />
-  },
-  {
-    name: "Ariribá",
-    desc: "Transição entre BC e Itajaí. Atendemos casas e novos empreendimentos com foco em eficiência energética.",
-    icon: <Wind className="text-cyan-500" />
-  },
-  {
-    name: "Estaleiro & Estaleirinho",
-    desc: "Paraísos preservados. Manutenção de adegas e climatização em pousadas e casas de veraneio exclusivas.",
-    icon: <Snowflake className="text-blue-200" />
-  },
-  {
-    name: "Taquaras & Laranjeiras",
-    desc: "A rota das praias. Assistência técnica para o setor de turismo e lazer em áreas de difícil acesso.",
-    icon: <Waves className="text-cyan-300" />
-  },
-  {
-    name: "Nova Esperança & S.J. Tadeu",
-    desc: "Crescimento industrial e logístico. Soluções para empresas, galpões e veículos refrigerados.",
-    icon: <Truck className="text-indigo-400" />
-  },
-  {
-    name: "Jardim Iate Clube",
-    desc: "Área náutica e residencial. Refrigeração especializada para embarcações e residências beira-rio.",
-    icon: <MapPin className="text-blue-500" />
   }
 ];
 

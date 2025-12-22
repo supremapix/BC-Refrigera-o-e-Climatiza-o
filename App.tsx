@@ -1,19 +1,13 @@
 
 import React, { useEffect } from 'react';
-import { Header } from './components/Header';
-import { Hero } from './components/Hero';
-import { Services } from './components/Services';
-import { Products } from './components/Products';
-import { Clients } from './components/Clients';
-import { Testimonials } from './components/Testimonials';
-import { InstagramFeed } from './components/InstagramFeed';
-import { Neighborhoods } from './components/Neighborhoods';
-import { Footer } from './components/Footer';
-import { FAB } from './components/FAB';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
+import { HomePage } from './pages/HomePage';
+import { LocationPage } from './pages/LocationPage';
+import { ServicePage } from './pages/ServicePage';
 
 const App: React.FC = () => {
   useEffect(() => {
-    // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -32,28 +26,22 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
-      {/* Background Glows */}
-      <div className="fixed top-0 left-0 w-full h-full overflow-hidden pointer-events-none -z-10">
-        <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-blue-600/5 blur-[150px]" />
-        <div className="absolute bottom-[0%] right-[-10%] w-[50%] h-[50%] bg-cyan-400/5 blur-[150px]" />
-      </div>
+    <HelmetProvider>
+      <Router>
+        <div className="min-h-screen bg-slate-950 text-white">
+          <div className="fixed top-0 left-0 w-full h-full overflow-hidden pointer-events-none -z-10">
+            <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-blue-600/5 blur-[150px]" />
+            <div className="absolute bottom-[0%] right-[-10%] w-[50%] h-[50%] bg-cyan-400/5 blur-[150px]" />
+          </div>
 
-      <Header />
-      
-      <main>
-        <Hero />
-        <Clients />
-        <Testimonials />
-        <Neighborhoods />
-        <Services />
-        <Products />
-        <InstagramFeed />
-      </main>
-
-      <Footer />
-      <FAB />
-    </div>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/localidade/:slug" element={<LocationPage />} />
+            <Route path="/servico/:slug" element={<ServicePage />} />
+          </Routes>
+        </div>
+      </Router>
+    </HelmetProvider>
   );
 };
 

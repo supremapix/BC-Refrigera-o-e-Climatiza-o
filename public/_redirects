@@ -1,0 +1,29 @@
+# Netlify SPA Redirect Rules
+# Todas as rotas que não são arquivos estáticos devem redirecionar para index.html
+
+# Localidades
+/localidade/centro-penha /index.html 200
+/localidade/armacao-penha /index.html 200
+/localidade/praia-alegre-penha /index.html 200
+/localidade/nossa-senhora-fatima-penha /index.html 200
+/localidade/santa-lidia-penha /index.html 200
+/localidade/sao-nicolau-penha /index.html 200
+/localidade/gravata-penha /index.html 200
+/localidade/centro-balneario-camboriu /index.html 200
+/localidade/pioneiros-balneario-camboriu /index.html 200
+/localidade/nacoes-balneario-camboriu /index.html 200
+/localidade/estados-balneario-camboriu /index.html 200
+/localidade/praia-dos-amores-balneario-camboriu /index.html 200
+/localidade/barra-norte-balneario-camboriu /index.html 200
+/localidade/barra-sul-balneario-camboriu /index.html 200
+
+# Serviços
+/servico/camaras-frias-tunel /index.html 200
+/servico/ar-condicionado-pmoc /index.html 200
+/servico/manutencao-chiller /index.html 200
+/servico/containers-reefer /index.html 200
+/servico/veiculos-refrigerados /index.html 200
+/servico/comandos-eletrica /index.html 200
+
+# Fallback para todas as outras rotas
+/* /index.html 200
