@@ -36,12 +36,47 @@ export const COVERAGE_INFO = {
   baseLocation: "Penha - SC"
 };
 
+export const CITIES = [
+  {
+    name: "Penha",
+    slug: "penha",
+    state: "Santa Catarina",
+    stateCode: "SC",
+    description: "Cidade litorânea conhecida pelo Beto Carrero World, maior parque temático da América Latina. Centro econômico com forte presença de comércio, turismo e pesca.",
+    fullDescription: "Penha é uma cidade encantadora do litoral norte de Santa Catarina, reconhecida nacionalmente por abrigar o Beto Carrero World. Além do turismo, a economia local é impulsionada pela pesca artesanal, comércio diversificado e um crescente setor de serviços. A BC Refrigeração e Climatização tem sede em Penha e atende toda a região com excelência.",
+    latitude: -26.7708,
+    longitude: -48.6442,
+    population: "34.000",
+    area: "62 km²"
+  },
+  {
+    name: "Balneário Camboriú",
+    slug: "balneario-camboriu",
+    state: "Santa Catarina",
+    stateCode: "SC",
+    description: "Principal destino turístico de Santa Catarina, famosa por seus arranha-céus, praias paradisíacas e vida noturna agitada.",
+    fullDescription: "Balneário Camboriú é conhecida como a 'Dubai brasileira' por seus impressionantes arranha-céus que margeiam a orla. A cidade oferece infraestrutura de classe mundial, com hotéis de luxo, restaurantes sofisticados e vida noturna vibrante. É um dos principais polos turísticos do Sul do Brasil, recebendo milhões de visitantes anualmente.",
+    latitude: -26.9906,
+    longitude: -48.6356,
+    population: "145.000",
+    area: "46 km²"
+  }
+];
+
 export const NEIGHBORHOODS = [
   {
-    name: "Centro - Penha",
+    name: "Centro",
     city: "Penha",
+    citySlug: "penha",
     slug: "centro-penha",
     desc: "Coração comercial de Penha. Atendimento especializado para comércios, restaurantes e residências do centro histórico.",
+    fullDescription: "O Centro de Penha é o coração pulsante da cidade, concentrando o comércio tradicional, serviços públicos e o dia a dia dos moradores. Com ruas históricas e estabelecimentos comerciais consolidados, é uma região que demanda sistemas de refrigeração e climatização confiáveis para manter o conforto de clientes e funcionários. Nossa equipe técnica tem vasta experiência atendendo lojas, restaurantes, mercados e escritórios no centro da cidade.",
+    features: [
+      "Atendimento rápido para comércio local",
+      "Manutenção preventiva de ar condicionado em escritórios",
+      "Instalação de câmaras frias para restaurantes",
+      "Assistência técnica especializada 24 horas"
+    ],
     icon: <Building className="text-blue-400" />
   },
   {
